@@ -52,7 +52,7 @@
 <section class="jumbotron text-center">
   <img src="img/headline.jpg" class="rounded-circle img-thumbnail" width="200px">
     <h1 class="display-4">Hello Okta!!!</h1>
-  <p class="lead lead1">Thankyou for came into my life and make my life so colorful. Aku bersyukur bisa bareng sama kamu kayak your are the best gift yang pernah dikasih tuhan sama aku </p>
+  <p class="lead lead1"></p>
   <i class="bi bi-heart-fill fs-1 text-danger"></i>
   <P class="lead lead2"></p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,128C672,128,768,192,864,186.7C960,181,1056,107,1152,85.3C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -345,7 +345,8 @@
 
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to('.lead2', {duration:2, delay:1.5, text:'I LOVE YOU OKTAAA'})
+      gsap.to(".lead1", {duration: 4, text: "Thankyou for came into my life and make my life so colorful. Aku bersyukur bisa bareng sama kamu kayak your are the best gift yang pernah dikasih tuhan sama aku", delay: 1});
+      gsap.to('.lead2', {duration:2, delay:5, text:'I LOVE YOU OKTAAA'})
       gsap.from('.jumbotron img', {duration:1, rotateY:360, ocupation:0})
       gsap.from('.navbar', {duration:1.5, y:'-100%', opacity:0, ease:'bounce'})
       gsap.from('.display-4', {duration:1, x:'-100%', opacity:0, delay:1, ease:'back'})
