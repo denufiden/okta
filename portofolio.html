@@ -138,6 +138,33 @@
           </div>
         </div>
       </div>
+
+      <section id="loveokta">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+             <h2>OKTA</h2> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-6 mb-3">
+              <div class="love-box">
+                <h4 class="love-name">Love</h4>
+                <img src="img/tilt/love.png" alt="love pic" class="img-love">
+                <a href="#" class="btn btn-light detail-button">show detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 mb-3">
+              <div class="love-box">
+                <h4 class="love-name">Okta</h4>
+                <img src="img/tilt/okta.png" alt="love pic" class="img-love">
+                <a href="#" class="btn btn-light detail-button">show detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L60,165.3C120,139,240,85,360,80C480,75,600,117,720,128C840,139,960,117,1080,122.7C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </section>
     <!-- Akhir Our Memories -->
@@ -150,9 +177,8 @@
             <h2>Gallery</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-3
-          ">
+        <div class="row data-tilt">
+          <div class="col-md-3 data-tilt">
             <a href="#">
               <img src="img/gallery/gallery (1).jpeg" alt="gambar gallery 1" class="img-fluid  gallery-img" data-aos="flip-left">
             </a>
@@ -353,6 +379,9 @@
     </script>
 
 
+    <!-- Script tilt.js -->
+    <script type="text/javascript" src="jsfile/vanilla-tilt.min.js"></script>
+
 
     <!-- Script JavaScript -->
     <script>
@@ -385,5 +414,19 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+
+    <script>document.write('<script src="http://' + (location.host || '${1:localhost}').split(':')[0] + ':${2:35729}/livereload.js?snipver=1"></' + 'script>')</script>
+
+    <!-- Tilt.js -->
+    <script type="text/javascript" src="jsfile/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".love-box"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+      });
+    </script>
+
+
   </body>
 </html>

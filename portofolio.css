@@ -26,3 +26,97 @@ section{
 
 #gallery .row > *{
 	padding: 1px
+}
+
+
+/*Love Okta Section	*/
+.love-box{
+	background-color: #0c6efd;
+	border-radius: 10px;
+	height: 500px;
+	position: relative;
+	transform-style: preserve-3d;
+	overflow: visible;
+}
+
+.love-box::before{
+	content: 'MY';
+	position: absolute;
+	color: #fff;
+	font-size: 6em;
+	font-weight: bold;
+	font-style: italic;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.love-box:hover::before{
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: 0.2;
+}
+
+.love-box::after{
+	content: 'GIRL';
+	position: absolute;
+	color: #fff;
+	font-size: 6em;
+	font-weight: bold;
+	font-style: italic;
+	bottom: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.love-box:hover::after{
+	opacity: 0.2;
+}
+
+.love-name{
+	position: absolute;
+	color: #fff;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 2em;
+	opacity: 0;
+	transition: 0.5s;
+	transform: translate3d(0, 0, 50px);
+}
+
+.love-box:hover .love-name	{
+	top: 15px;
+	opacity: 1;	
+}
+
+.detail-button{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate3d(-50%, 0, 130px);
+	opacity: 0;
+	transition: 0.5s;
+}	
+
+.love-box:hover .detail-button{
+	bottom: 10px;
+	opacity: 1;
+}
+
+.img-love{
+	position: absolute;
+	top: 52%;
+	left: 50%;
+	transform: translate3d(-50%, -52%, 100px);
+	max-width: 400px;
+	transition: 0.5s;
+}
+
+.love-box:hover .img-love{
+	transform: translate3d(-50%, -52%, 100px) rotate(10deg) scale(1.2);
+}
